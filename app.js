@@ -11,6 +11,8 @@ app.get('/', (req, res, next) => {
     res.render('index')
 })
 
+app.use(express.static(path.join(__dirname,'public')))
+
 app.listen(process.env.PORT || port, () => {
     if(!process.env.PORT){
         console.log(`go to: http://localhost:${port}`)
