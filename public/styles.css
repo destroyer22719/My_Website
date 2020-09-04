@@ -42,10 +42,48 @@ h2{
     justify-content: center;
     flex-wrap: wrap;
 }
-.image-item{
+#knowledge > img{
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
     width: 150px;
     height: 150px;
+}
+#text{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 50px;
+    margin-bottom: 40px;
+}
+#text > div{
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    line-height: 60px;
+    width: 150px;
+    height: 70px;
+}
+.hovered {
+    width: 150px;
+    background-color: rgb(30, 30, 30);
+    font-size: 30px;
+    border-radius: 5px;
+}
+footer {
+    margin-top: 30px;
+    padding:25px;
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+
+}
+footer > * {
+    color: white;
+    font-size: 30px;
+    display: inline;
+}
+footer > h4> a {
+    color: white;
+    text-decoration: none;
 }
