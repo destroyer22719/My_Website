@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <%- include('includes/nav')%>
@@ -17,14 +18,34 @@
     <main>
         <h2>Skills and Knowledge:</h2>
         <div id="knowledge">
-            <img class="image-item" src="https://bit.ly/32WI4gn">
-            <img  class="image-item" src="https://bit.ly/31ZSX1m">
-            <img class="image-item"src="https://bit.ly/3gUXDtH">
-            <img class="image-item"src="https://bit.ly/3lT8wQo">
-            <img class="image-item"src="https://bit.ly/2Gooulm">
-            <img class="image-item"src="https://bit.ly/2EWLnvO">
-            <img class="image-item" src="https://bit.ly/2F6ZVbU">
+            <img src="https://bit.ly/32WI4gn" alt="JavaScript">
+            <img src="https://bit.ly/31ZSX1m" alt="HTML">
+            <img src="https://bit.ly/3gUXDtH" alt="CSS">
+            <img src="https://bit.ly/3lT8wQo" alt="JQuery">
+            <img src="https://bit.ly/2Gooulm" alt="NodeJS">
+            <img src="https://bit.ly/2EWLnvO" alt="Git">
+            <img src="https://bit.ly/2F6ZVbU" alt="GitHub">
+        </div>
+        <div id="text">
+            <div id="JavaScript" >JavaScript</div>
+            <div id="HTML" >HTML</div>
+            <div id="CSS" >CSS</div>
+            <div id="JQuery" >JQuery</div>
+            <div id="NodeJS" >NodeJS</div>
+            <div id="Git" >Git</div>
+            <div id="GitHub" >GitHub</div>
         </div>
     </main>
+    <script>
+        let hoverItem;
+        $("#knowledge > img").hover(function(){
+            hoverItem = $(this).attr("alt")
+            $(`#${hoverItem}`).toggleClass("hovered")
+        },function(){
+            hoverItem = $(this).attr("alt")
+            $(`#${hoverItem}`).toggleClass("hovered")
+        })
+        
+    </script>
 </body>
 </html>
