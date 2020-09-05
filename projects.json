@@ -3,8 +3,8 @@
         "name":"my shopping site",
         "link":"https://my-shopping-site-123.herokuapp.com/",
         "languages":["NodeJS","Express","MongoDB","EJS","Javascript","HTML","CSS"],
-        "sourceCode":"https://github.com/destroyer22719/my-shopping-site",
-        "desc":"Using NodeJS and Express to create a dynamic shopping site and storing and fetching data using MongoDB"
-    },
-    {}
+        "code":"https://github.com/destroyer22719/my-shopping-site",
+        "desc":"Using NodeJS and Express to create a dynamic shopping site and storing and fetching data using MongoDB",
+        "img":"/images/Screenshot from 2020-09-05 09-49-43.png"
+    }
 ]

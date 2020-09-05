@@ -8,11 +8,13 @@ nav {
     width: 100%;
     background-color: rgb(30, 30, 30);
 }
+a {
+    text-decoration: none;
+}
 nav > a {
     padding:40px;
     line-height: 50px;
     font-size: 20px;
-    text-decoration:none;
     color:white;
     text-align: center;
     flex-grow: 1;
@@ -31,12 +33,20 @@ header{
 mark{
     background-color: white;
 }
+h1,h2,h3,h4,h5,h6{
+    font-family: "Lucida Console", Monaco, monospace;
+}
 h1{
     margin-top: 0px;
+    font-size: 60px;
 }
 h2{
     font-size: 40px;
 }
+h3{
+    font-size: 30px;
+}
+
 #knowledge{
     display: flex;
     justify-content: center;
@@ -85,10 +95,39 @@ footer > * {
 }
 footer > h4> a {
     color: white;
-    text-decoration: none;
 }
-#projects {
+.projects {
     width:90%;
+    height: 500px;
     background-color: rgb(200, 200, 200);
-    border:3px solid rgb(150, 150,150)
+    border:3px solid rgb(125, 125,125);
+    border-radius: 5px;
+    margin: 0 auto;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.projects > h3{
+    overflow-wrap: break-word;
+    text-transform: capitalize;
+}
+.projectImage {
+    width:500px;
+}
+.projectDisplay {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.projectDisplayText {
+    text-align: left;
+    font-size: 15px;
+    width:200px;
+    border:3px solid rgb(125, 125,125);
+    margin-left: 30px;
+}
+.projects > div > a {
+    color:black;
+    font-size: 20px;
+}
+.projects > div > a:hover {
+    text-decoration: underline;
 }

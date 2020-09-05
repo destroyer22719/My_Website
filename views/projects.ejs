@@ -9,6 +9,29 @@
 </head>
 <body>
     <%- include('includes/nav')%>
-    <h1>My Projects</h1>
+    <main>
+        <h1 style="margin-top: 10px;">My Projects</h1>
+        <% myProjects.forEach((project, index)=>{%>
+        <section class="projects">
+            <h3><%=project.name%></h3>
+            <div><a href="<%=project.link%>">URL</a> | <a href="<%=project.code%>">Source Code</a></div>    
+            <div class="projectDisplay">
+                <img class="projectImage" src="<%=project.img%>">
+                <div class="projectDisplayText">
+                    <h3 style="text-align: center; border-bottom: 2px solid black;">#<%=index + 1%><h3>
+                    <h4 style="text-align: center;margin-top: 0px;">Languages:</h4>
+                    <ul>
+                        <% project.languages.forEach((lang) => {%>
+                            <li><%=lang%></li>
+                        <%})%>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div><%=project.desc%></div>
+        </section>
+        <%})%>
+    </main>
+    <%- include('includes/footer')%>
 </body>
 </html>
