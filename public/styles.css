@@ -87,3 +87,8 @@ footer > h4> a {
     color: white;
     text-decoration: none;
 }
+#projects {
+    width:90%;
+    background-color: rgb(200, 200, 200);
+    border:3px solid rgb(150, 150,150)
+}
