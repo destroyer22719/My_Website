@@ -46,6 +46,9 @@ h2{
 h3{
     font-size: 30px;
 }
+h4{
+    font-size: 25px;
+}
 
 #knowledge{
     display: flex;
@@ -97,21 +100,29 @@ footer > h4> a {
     color: white;
 }
 .projects {
+    color: white;
     width:90%;
     height: 500px;
-    background-color: rgb(200, 200, 200);
-    border:3px solid rgb(125, 125,125);
+    background-color: rgb(80, 80, 80);
+    border:3px solid rgb(80, 80,80);
     border-radius: 5px;
     margin: 0 auto;
     font-family: "Comic Sans MS", cursive, sans-serif;
     margin-bottom: 25px;
 }
 .projects > h3{
+    background-color: rgb(30, 30, 30);
+    padding:10px;
     overflow-wrap: break-word;
     text-transform: capitalize;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .projectImage {
     width:500px;
+}
+.links{
+    background-color: white;
 }
 .projectDisplay {
     display: flex;
@@ -119,11 +130,23 @@ footer > h4> a {
     margin-top: 10px;
 }
 .projectDisplayText {
+    background-color: whitesmoke;
+    color: black;
     text-align: left;
     font-size: 15px;
     width:200px;
-    border:3px solid rgb(125, 125,125);
+    border:3px solid rgb(30, 30, 30);
+    border-radius: 10px;
     margin-left: 30px;
+    overflow: hidden;
+}
+.projectDisplayText > h3 {
+    background-color: rgb(10, 100, 255);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .projects > div > a {
     color:black;
@@ -131,4 +154,9 @@ footer > h4> a {
 }
 .projects > div > a:hover {
     text-decoration: underline;
+}
+.desc {
+    background-color: rgb(30, 30, 30);
+    padding:40px
+    
 }

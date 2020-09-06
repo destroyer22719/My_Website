@@ -14,11 +14,11 @@
         <% myProjects.forEach((project, index)=>{%>
         <section class="projects">
             <h3><%=project.name%></h3>
-            <div><a target="_blank" href="<%=project.link%>">URL</a> | <a target="_blank" href="<%=project.code%>">Source Code</a></div>    
+            <div class="links"><a target="_blank" href="<%=project.link%>">URL</a> | <a target="_blank" href="<%=project.code%>">Source Code</a></div>    
             <div class="projectDisplay">
                 <img class="projectImage" src="<%=project.img%>">
                 <div class="projectDisplayText">
-                    <h3 style="text-align: center; border-bottom: 2px solid black;">#<%=index + 1%><h3>
+                    <h3>#<%=index + 1%></h3>
                     <h4 style="text-align: center;margin-top: 0px;">Languages:</h4>
                     <ul>
                         <% project.languages.forEach((lang) => {%>
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <br>
-            <div><%=project.desc%></div>
+            <div class="desc"><%=project.desc%></div>
         </section>
         <%})%>
     </main>
