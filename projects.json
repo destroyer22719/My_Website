@@ -2,9 +2,17 @@
     {
         "name":"my shopping site",
         "link":"https://my-shopping-site-123.herokuapp.com/",
-        "languages":["NodeJS","Express","MongoDB","EJS","Javascript","HTML","CSS"],
+        "languages":["NodeJS","Express","MongoDB","EJS","JavaScript","HTML","CSS"],
         "code":"https://github.com/destroyer22719/my-shopping-site",
         "desc":"Using NodeJS and Express to create a dynamic shopping site and storing and fetching data using MongoDB",
         "img":"/images/Screenshot from 2020-09-05 09-49-43.png"
+    },
+    {
+        "name":"selector sandbox",
+        "link":"https://destroyer22719.github.io/Selector_Sandbox/",
+        "languages":["HTML","CSS","JavaScript","JQuery"],
+        "code":"https://github.com/destroyer22719/Selector_Sandbox/",
+        "desc":"Practice and experiment with CSS selectors with this website",
+        "img":"images/Screenshot from 2020-09-05 10-48-10.png"
     }
 ]
