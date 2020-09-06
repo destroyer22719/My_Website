@@ -14,5 +14,13 @@
         "code":"https://github.com/destroyer22719/Selector_Sandbox/",
         "desc":"Practice and experiment with CSS selectors with this website",
         "img":"images/Screenshot from 2020-09-05 10-48-10.png"
+    },
+    {
+        "name":"learning ajax and async",
+        "link":"https://destroyer22719.github.io/using-async-with-ajax/tours.htm",
+        "languages":"JavaScript",
+        "code":"https://github.com/destroyer22719/using-async-with-ajax/blob/master/scripts/ajax.js",
+        "desc":"Using ajax requests to fetch weather API on a template website",
+        "img":"images/Screenshot from 2020-09-06 13-28-11.png"
     }
 ]
