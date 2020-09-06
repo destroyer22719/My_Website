@@ -3,7 +3,9 @@ const app = express();
 const path = require('path')
 const port = 3000
 const fs = require('fs')
+const compression = require('compression')
 
+app.use(compression())
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './views'));
 
