@@ -18,33 +18,52 @@
     <main>
         <h2>Skills and Knowledge:</h2>
         <div id="knowledge">
-            <img src="https://bit.ly/32WI4gn" alt="JavaScript">
-            <img src="https://bit.ly/31ZSX1m" alt="HTML">
-            <img src="https://bit.ly/3gUXDtH" alt="CSS">
-            <img src="https://bit.ly/3lT8wQo" alt="JQuery">
-            <img src="https://bit.ly/2Gooulm" alt="NodeJS">
-            <img src="https://bit.ly/334Pm1C" alt="Angular">
-            <img src="https://bit.ly/2F6ZVbU" alt="GitHub">
+            <div class="knowledge-item">
+                <img src="images/icons/javascript.png" alt="JavaScript">
+                <div class="icon" id="JavaScript" hidden >JavaScript</div>
+
+            </div>
+            <div>
+                <img src="images/icons/html.png" alt="HTML">
+                <div class="icon" id="HTML" hidden>HTML</div>
+            </div>
+            <div>
+                <img src="images/icons/css.webp" alt="CSS">
+                <div class="icon" id="CSS" hidden>CSS</div>
+
+            </div>
+            <div>
+                <img src="images/icons/jquery.webp" alt="JQuery">
+                <div class="icon" id="JQuery" hidden >JQuery</div>
+            </div>
+            <div>
+                <img src="images/icons/nodejs.webp" alt="NodeJS">
+                <div class="icon" id="NodeJS" hidden>NodeJS</div>
+
+            </div>
+            <div>
+                <img src="images/icons/angular.webp" alt="Angular">
+                <div class="icon" id="Angular" hidden>Angular</div>
+            </div>
+            <div>
+                <img src="images/icons/github.png" alt="GitHub">
+                <div class="icon" id="GitHub" hidden>GitHub</div>
+            </div>
         </div>
         <div id="text">
-            <div id="JavaScript" >JavaScript</div>
-            <div id="HTML" >HTML</div>
-            <div id="CSS" >CSS</div>
-            <div id="JQuery" >JQuery</div>
-            <div id="NodeJS" >NodeJS</div>
-            <div id="Angular" >Angular</div>
-            <div id="GitHub" >GitHub</div>
         </div>
     </main>
     <%- include('includes/footer')%>
     <script>
         let hoverItem;
-        $("#knowledge > img").hover(function(){
-            hoverItem = $(this).attr("alt")
-            $(`#${hoverItem}`).toggleClass("hovered")
+        $("#knowledge > div > img").hover(function(){
+            console.log('hovered')
+            const id = $(this).attr("alt")
+            $(`#${id}`).attr("hidden",false)
         },function(){
-            hoverItem = $(this).attr("alt")
-            $(`#${hoverItem}`).toggleClass("hovered")
+            console.log('mouse left')
+            const id = $(this).attr("alt")
+            $(`#${id}`).attr("hidden",true)
         })
         
     </script>
