@@ -1,34 +1,18 @@
 [
     {
-        "name":"my shopping site",
+        "name":"NodeJS Shopping Site",
         "link":"https://my-shopping-site-123.herokuapp.com/",
-        "languages":["NodeJS","Express","MongoDB","EJS","JavaScript","HTML","CSS"],
+        "languages":["NodeJS","Express","MongoDB","JavaScript","HTML","CSS"],
         "code":"https://github.com/destroyer22719/my-shopping-site",
-        "desc":"Using NodeJS and Express to create a dynamic shopping site and storing and fetching data using MongoDB",
+        "desc":"Created a dynamic e-commerce site using NodeJS and MongoDB. Implemented session storage, CSRF tokens, error handling, and the EJS Template Engine",
         "img":"/images/Screenshot from 2020-09-05 09-49-43.png"
     },
     {
-        "name":"selector sandbox",
+        "name":"Selector Sandbox",
         "link":"https://destroyer22719.github.io/Selector_Sandbox/",
         "languages":["HTML","CSS","JavaScript","JQuery"],
         "code":"https://github.com/destroyer22719/Selector_Sandbox/",
-        "desc":"Practice and experiment with CSS selectors with this website",
+        "desc":"Used jQuery selectors and DOM to create a sandbox to test and experiment with jQuery and CSS Selectors",
         "img":"images/Screenshot from 2020-09-05 10-48-10.png"
-    },
-    {
-        "name":"learning ajax and async",
-        "link":"https://destroyer22719.github.io/using-async-with-ajax/tours.htm",
-        "languages":["JavaScript"],
-        "code":"https://github.com/destroyer22719/using-async-with-ajax/blob/master/scripts/ajax.js",
-        "desc":"Using ajax requests to fetch weather API for a template website",
-        "img":"images/Screenshot from 2020-09-06 13-28-11.png"
-    },
-    {
-        "name":"learning angular",
-        "link":"https://destroyer22719.github.io/learning-angular/attr-dir",
-        "languages":["Angular, Bootstrap"],
-        "code":"https://github.com/destroyer22719/learning-angular/",
-        "img":"images/Screenshot from 2020-09-06 15-00-22.png",
-        "desc":"learning the foundation of angular including property binding, routing, forms, etc"
     }
 ]

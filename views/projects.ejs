@@ -11,14 +11,13 @@
     <%- include('includes/nav')%>
     <main>
         <h1 style="margin-top: 10px;">My Projects</h1>
-        <% myProjects.forEach((project, index)=>{%>
+        <% myProjects.forEach( project =>{ %>
         <section class="projects">
-            <h3><%=project.name%></h3>
-            <div class="links"><a target="_blank" href="<%=project.link%>">URL</a> | <a target="_blank" href="<%=project.code%>">Source Code</a></div>    
+            <a target="_blank" href="<%=project.link%>"><h3><%=project.name%></h3></a></a>
+            <div class="links"><a target="_blank" href="<%=project.code%>">Source Code</a></div>    
             <div class="projectDisplay">
                 <img class="projectImage" src="<%=project.img%>">
                 <div class="projectDisplayText">
-                    <h3>#<%=index + 1%></h3>
                     <h4 style="text-align: center;margin-top: 0px;">Languages:</h4>
                     <ul>
                         <% project.languages.forEach((lang) => {%>

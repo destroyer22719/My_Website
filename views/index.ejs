@@ -10,18 +10,17 @@
 <body>
     <%- include('includes/nav')%>
     <header>
-        <h1><mark>Introduction</mark></h1>
-        <p><mark>Hello my name is Nathan Cai, I'm in grade 11. I love computers, computer science, 
-        and  especially programming. <br>I am self taught in many differnet programming skills and knowledge 
-        <br> and in this website I'd like to share it with you!</mark></p>    
+        <br>
+        <h1><mark>Nathan Cai</mark></h1>
+        <p><mark>I am a self taught programmer, I am profficient in JavaScript and JavaScript technologies such as NodeJS, React, and jQuery. I love learning new things and help others learn new things.
+          My goal is a career in Full Stack Software Development when I grow up. <br><br> I am in grade 11 and I live in Toronto, Ontario, Canada. <br><br>To contact me by email: nathan.cai.ca@gmail.com</mark></p>    
     </header>
     <main>
-        <h2>Skills and Knowledge:</h2>
+        <h2>Skills:</h2>
         <div id="knowledge">
             <div class="knowledge-item">
                 <img src="images/icons/javascript.png" alt="JavaScript">
                 <div class="icon" id="JavaScript" hidden >JavaScript</div>
-
             </div>
             <div>
                 <img src="images/icons/html.png" alt="HTML">
@@ -30,25 +29,23 @@
             <div>
                 <img src="images/icons/css.webp" alt="CSS">
                 <div class="icon" id="CSS" hidden>CSS</div>
-
             </div>
             <div>
-                <img src="images/icons/jquery.webp" alt="JQuery">
+                <img src="images/icons/jquery.png" alt="JQuery">
                 <div class="icon" id="JQuery" hidden >JQuery</div>
             </div>
             <div>
-                <img src="images/icons/nodejs.webp" alt="NodeJS">
+                <img src="images/icons/nodejs.png" alt="NodeJS">
                 <div class="icon" id="NodeJS" hidden>NodeJS</div>
-
             </div>
             <div>
-                <img src="images/icons/angular.webp" alt="Angular">
-                <div class="icon" id="Angular" hidden>Angular</div>
+                <img src="images/icons/react.png" alt="React">
+                <div class="icon" id="React" hidden>React</div>
             </div>
             <div>
-                <img src="images/icons/github.png" alt="GitHub">
-                <div class="icon" id="GitHub" hidden>GitHub</div>
-            </div>
+              <img src="images/icons/mongodb.png" alt="MongoDB">
+              <div class="icon" id="MongoDB" hidden>MongoDB</div>
+          </div>
         </div>
         <div id="text">
         </div>
@@ -57,11 +54,9 @@
     <script>
         let hoverItem;
         $("#knowledge > div > img").hover(function(){
-            console.log('hovered')
             const id = $(this).attr("alt")
             $(`#${id}`).attr("hidden",false)
         },function(){
-            console.log('mouse left')
             const id = $(this).attr("alt")
             $(`#${id}`).attr("hidden",true)
         })
