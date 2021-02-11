@@ -15,10 +15,23 @@ app.get('/', (req, res, next) => {
     res.render('index')
 })
 app.get('/projects', (req, res, next) => {
+    const tech = req.query.tech;
+
+    let projectList;
+
+    if (tech) 
+      projectList = myProjects.filter(({languages}) => {
+        const list = languages.toString();
+        return list.search(new RegExp(tech, "i")) != -1   
+      });
+    else 
+      projectList = myProjects;
+      
     res.render('projects', {
-        myProjects: myProjects
-    })
-})
+          myProjects: projectList
+      })
+});
+
 app.use(express.static(path.join(__dirname,'public')))
 
 app.listen(process.env.PORT || port, () => {

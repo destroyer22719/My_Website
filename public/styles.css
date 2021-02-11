@@ -60,7 +60,7 @@ h4{
     justify-content: center;
     flex-wrap: wrap;
 }
-#knowledge > div > img{
+#knowledge > a > div > img{
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
