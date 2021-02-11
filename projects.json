@@ -5,7 +5,7 @@
         "languages":["NodeJS","Express","MongoDB","JavaScript","HTML","CSS"],
         "code":"https://github.com/destroyer22719/my-shopping-site",
         "desc":"Created a dynamic e-commerce site using NodeJS and MongoDB. Implemented session storage, CSRF tokens, error handling, and the EJS Template Engine",
-        "img":"/images/Screenshot from 2020-09-05 09-49-43.png"
+        "img":"Screenshot from 2020-09-05 09-49-43.png"
     },
     {
         "name":"Selector Sandbox",
@@ -13,7 +13,7 @@
         "languages":["JQuery", "JavaScript", "HTML","CSS"],
         "code":"https://github.com/destroyer22719/Selector_Sandbox/",
         "desc":"Used jQuery selectors and DOM manipulations to create a sandbox to test and experiment with jQuery and CSS Selectors",
-        "img":"images/Screenshot from 2020-09-05 10-48-10.png"
+        "img":"Screenshot from 2020-09-05 10-48-10.png"
     },
     {
       "name":"Expensify App",
@@ -21,6 +21,6 @@
       "languages":["React", "Redux", "Firebase", "HTML", "CSS", "JavaScript"],
       "desc": "Implemented Firebase authentication and realtime database on a ReactJS and Redux application to manage and track expenses",
       "code": "https://github.com/destroyer22719/Expensify-App-React",
-      "img": "images/Screenshot from 2020-09-05 09-49-43.png"
+      "img": "Screenshot from 2021-02-11 12-52-16.png"
     }
 ]

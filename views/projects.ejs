@@ -21,12 +21,12 @@
                 </div>
                 <div class="projectDisplay">
                     <br>
-                    <img class="projectImage" src="<%=project.img%>">
+                    <img class="projectImage" src="images/<%=project.img%>">
                     <div class="languageUsed">
                         <h4 style="text-align: center; margin-top: 0px;">Technologies Used</h4>
                         <div class="languageUsed-container">
-                          <% project.languages.forEach((lang) => {%>
-                              <img alt="<%=lang%>" src="/images/icons/<%=lang.toLowerCase()%>.png">
+                          <% project.languages.forEach((tech) => {%>
+                              <img alt="<%=tech%>" title="<%=tech%>" src="/images/icons/<%=tech.toLowerCase()%>.png">
                             <%})%>
                         </div>
                     </div>

@@ -28,6 +28,7 @@ header{
     background-image: url('https://bit.ly/3i1gy7t');
     height: 500px;
     background-repeat: no-repeat;
+    background-size: cover;
     font-size: 30px;
 }
 
@@ -99,23 +100,21 @@ h4{
 }
 footer {
     margin-top: 100px;
-    padding:25px;
+    padding:50px 0;
     width: 100%;
     background-color: rgb(30, 30, 30);
+    display: flex;
+    justify-content: center;
+}
 
-}
-footer > * {
-    color: white;
-    font-size: 30px;
-    display: inline;
-}
-footer > h4> a {
-    color: white;
+footer img {
+	margin: 0px 40px;
+	width: 125px;
 }
 
 .projects-lists {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .projects {
@@ -187,19 +186,19 @@ footer > h4> a {
 }
 
 .languageUsed-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 400px;
-  width: 250px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 400px;
+	width: 250px;
 }
 
 .languageUsed-container > img {
-  height: 100px;
-  max-width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
+	height: 100px;
+	max-width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
 }
 
 .projects > div > a {
