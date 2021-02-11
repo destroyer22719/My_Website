@@ -10,9 +10,9 @@
     {
         "name":"Selector Sandbox",
         "link":"https://destroyer22719.github.io/Selector_Sandbox/",
-        "languages":["HTML","CSS","JavaScript","JQuery"],
+        "languages":["JQuery", "JavaScript", "HTML","CSS"],
         "code":"https://github.com/destroyer22719/Selector_Sandbox/",
-        "desc":"Used jQuery selectors and DOM to create a sandbox to test and experiment with jQuery and CSS Selectors",
+        "desc":"Used jQuery selectors and DOM manipulations to create a sandbox to test and experiment with jQuery and CSS Selectors",
         "img":"images/Screenshot from 2020-09-05 10-48-10.png"
     }
 ]
