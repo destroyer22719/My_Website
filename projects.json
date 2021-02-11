@@ -14,5 +14,13 @@
         "code":"https://github.com/destroyer22719/Selector_Sandbox/",
         "desc":"Used jQuery selectors and DOM manipulations to create a sandbox to test and experiment with jQuery and CSS Selectors",
         "img":"images/Screenshot from 2020-09-05 10-48-10.png"
+    },
+    {
+      "name":"Expensify App",
+      "link": "https://my-react-expensify-application.herokuapp.com/",
+      "languages":["React", "Redux", "Firebase", "HTML", "CSS", "JavaScript"],
+      "desc": "Implemented Firebase authentication and realtime database on a ReactJS and Redux application to manage and track expenses",
+      "code": "https://github.com/destroyer22719/Expensify-App-React",
+      "img": "images/Screenshot from 2020-09-05 09-49-43.png"
     }
 ]
