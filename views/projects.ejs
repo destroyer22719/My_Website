@@ -12,23 +12,24 @@
     <main>
         <h1 style="margin-top: 10px;">My Projects</h1>
         <% myProjects.forEach( project =>{ %>
-        <section class="projects">
-            <a target="_blank" href="<%=project.link%>"><h3><%=project.name%></h3></a></a>
-            <div class="links"><a target="_blank" href="<%=project.code%>">Source Code</a></div>    
-            <div class="projectDisplay">
-                <img class="projectImage" src="<%=project.img%>">
-                <div class="projectDisplayText">
-                    <h4 style="text-align: center;margin-top: 0px;">Languages:</h4>
-                    <ul>
+          <section class="projects">
+              <a target="_blank" href="<%=project.link%>"><h3><%=project.name%></h3></a></a>
+              <div class="projectText">
+                <div class="desc"><%=project.desc%></div>
+                <a target="_blank" href="<%=project.code%>"><div id="sourceCode">Source Code</div></a></a>       
+              </div>
+              <div class="projectDisplay">
+                  <img class="projectImage" src="<%=project.img%>">
+                  <div class="languageUsed">
+                      <h4 style="text-align: center; margin-top: 0px;">Technologies Used</h4>
+                      <div class="languageUsed-container">
                         <% project.languages.forEach((lang) => {%>
-                            <li><%=lang%></li>
-                        <%})%>
-                    </ul>
-                </div>
-            </div>
-            <br>
-            <div class="desc"><%=project.desc%></div>
-        </section>
+                            <img alt="<%=lang%>" src="/images/icons/<%=lang.toLowerCase()%>.png">
+                          <%})%>
+                      </div>
+                  </div>
+              </div>
+          </section>
         <%})%>
     </main>
     <%- include('includes/footer')%>

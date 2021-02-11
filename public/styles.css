@@ -116,9 +116,8 @@ footer > h4> a {
     color: white;
     width:100%;
     height: 600px;
-    border:3px solid rgb(80, 80,80);
     border-radius: 5px;
-    margin: 0 auto;
+    margin: 50px auto;
     font-family: "Comic Sans MS", cursive, sans-serif;
     margin-bottom: 25px;
 }
@@ -138,37 +137,41 @@ footer > h4> a {
   text-decoration: none;
 }
 .projectImage {
-    width:500px;
+    height: 450px;
+    margin-bottom: 10px;
 }
-.links{
-    position: relative;
-    width: 175px;
-    height: 50px;
+#sourceCode{
+    color: white;
+    display: inline-block;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    line-height: 50px;
     font-size: 25px;
-    margin: 0px auto 10px auto;
     background-color: red;
+    padding: 20px;
+    margin-bottom: 10px;
     font-weight: bold;
+    height: 80px;
 }
+
+.projectText {
+  display: flex;
+  justify-content: center;
+}
+
 .projectDisplay {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
-.projectDisplayText {
-    background-color: whitesmoke;
+.languageUsed {
     color: black;
     text-align: left;
     font-size: 15px;
-    width:200px;
-    border:3px solid rgb(30, 30, 30);
-    border-radius: 10px;
+    width:250px;
     margin-left: 30px;
     overflow: hidden;
 }
-.projectDisplayText > h3 {
+.languageUsed > h3 {
     background-color: rgb(10, 100, 255);
     text-align: center;
     padding-top: 20px;
@@ -176,6 +179,21 @@ footer > h4> a {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+.languageUsed-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 350px;
+}
+
+.languageUsed-container > img {
+  width: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
 .projects > div > a {
     color:white;
     font-size: 20px;
@@ -185,7 +203,14 @@ footer > h4> a {
     text-decoration: underline;
 }
 .desc {
-    background-color: rgb(30, 30, 30);
-    padding:40px
-    
+  color: rgb(30, 30, 30);
+  background-color: rgb(255,223,0);
+  position: relative;
+  width: 25%;
+  display: inline-block;
+  padding: 20px;
+  height: 80px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
+
