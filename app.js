@@ -9,9 +9,10 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './views'));
 
 const myProjects = require("./projects.json");
+const skills = require("./skills.json");
 
 app.get('/', (req, res, next) => {
-    res.render('index')
+    res.render('index', {skills})
 })
 app.get('/projects', (req, res, next) => {
     const tech = req.query.tech;

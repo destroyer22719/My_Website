@@ -18,50 +18,15 @@
     <main>
         <h2>Skills:</h2>
         <div id="knowledge">
-            <a target="_blank" href="/projects?tech=javascript">
-              <div class="knowledge-item">
-                <img src="images/icons/javascript.png" alt="JavaScript">
-                <div class="icon" id="JavaScript" hidden >JavaScript</div>
-              </div>      
-            </a>
-            <a target="_blank" href="/projects?tech=html">
-              <div>
-                <img src="images/icons/html.png" alt="HTML">
-                <div class="icon" id="HTML" hidden>HTML</div>
-              </div>
-            </a>
-            <a target="_blank" href="/projects?tech=css">
-              <div>
-                <img src="images/icons/css.png" alt="CSS">
-                <div class="icon" id="CSS" hidden>CSS</div>
-              </div>
-            </a>
-            </a>
-            <a target="_blank" href="/projects?tech=nodejs">
-              <div>
-                <img src="images/icons/nodejs.png" alt="NodeJS">
-                <div class="icon" id="NodeJS" hidden>NodeJS</div>
-            </div>
-            </a>
-            </a>
-            <a target="_blank" href="/projects?tech=react">
-              <div>
-                <img src="images/icons/react.png" alt="React">
-                <div class="icon" id="React" hidden>React</div>
-              </div>
-            </a>
-            <a target="_blank" href="/projects?tech=mongodb">
-              <div>
-                <img src="images/icons/mongodb.png" alt="MongoDB">
-                <div class="icon" id="MongoDB" hidden>MongoDB</div>
-              </div>
-            </a>
-            <a target="_blank" href="/projects?tech=jquery">
-              <div>
-                <img src="images/icons/jquery.png" alt="JQuery">
-                <div class="icon" id="JQuery" hidden >JQuery</div>
-            </div>
-        </div>
+			<% skills.forEach(skill => {%>
+				<a target="_blank" href="/projects?tech=<%=skill.toLowerCase()%>">
+					<div class="knowledge-item">
+						<img src="images/icons/<%=skill.toLowerCase()%>.png" alt="<%=skill%>">
+						<div class="icon" id="<%=skill%>" hidden ><%=skill%></div>
+					</div> 
+				</a>
+			<%});%>
+		  </div>
         <div id="text">
         </div>
     </main>
